@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'font3361';
+  src: url('font3361.woff') format('woff'),
+       url('font3361.ttf') format('truetype'),
+       url('font3361.svg#font3361') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'footer (3)';
+  src: url('footer (3).eot');
+  src: url('footer (3).woff2') format('woff2'),
+       url('footer (3).eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
