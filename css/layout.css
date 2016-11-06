@@ -238,7 +238,46 @@ input:-moz-placeholder {
 		}
 			.b-top .b-top--left li:last-child {
 				margin-right: 0px;
+				position: relative;
 			}
+			.b-top .b-top--left li:last-child .babl {
+				width: 300px;
+				height: 95px;
+				background-color: #f1f1f1;
+				position: absolute;
+				z-index: 10;
+				left: 40%;
+				top: 30px;
+				display: table;
+				border-radius: 3px;
+				-webkit-box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
+-moz-box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
+box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
+			}
+				.b-top .b-top--left li:last-child .babl p {
+					width: 260px;
+					color: #000;
+					font-size: 16px;
+					font-family: 'PTSansRegular';
+					text-align: left;
+					display: table-cell;
+					height: 95px;
+					vertical-align: middle;
+					padding: 0px 15px;
+				}
+				.b-top .b-top--left li:last-child .babl .trian {
+					position: relative;
+				}
+					.b-top .b-top--left li:last-child .babl .trian .triangle {
+						position: absolute;
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 0 8px 8px 8px;
+						border-color: transparent transparent #f1f1f1 transparent;
+					    top: -8px;
+    					left: 35px;
+					}
 		.b-top a {
 			font-family: 'PTSansRegular';
 			font-size: 16px;
@@ -289,6 +328,7 @@ input:-moz-placeholder {
 		}
 			.b-nav .b-nav__menu li:last-child {
 				margin-right: 0px;
+				position: relative;
 			}
 		.b-nav .b-nav__menu li a {
 			font-family: 'PTSansRegular';
@@ -298,7 +338,26 @@ input:-moz-placeholder {
 			.b-nav .b-nav__menu li a:hover {
 				text-decoration: underline;
 			}
-		.b-nav .b-nav__menu li img {}
+		.b-nav .b-nav__menu li img {
+			position: absolute;
+			cursor: pointer;
+			z-index: 10;
+			left: -15px;
+    		top: 2px;
+		}
+		.b-nav .b-nav__menu li .input_search {
+			display: none;
+		    width: 0px;
+		    height: 30px;
+		    position: absolute;
+		    left: -20px;
+		    border-radius: 5px;
+		    border: 2px solid #f0f0f0;
+		    z-index: 5;
+		    top: -4px;
+		    padding-left: 30px;
+		    transition: all cubic-bezier(0, 0, 0, 0.99) 0.8s;
+		}
 	.b-nav .b-nav__get_call_back {
 		text-align: right;
 	}
@@ -320,6 +379,7 @@ input:-moz-placeholder {
 				text-decoration: none;
 			}
 
+
 .b-slider {
 	}
 .b-slider .b-slider__img-for-slide {
@@ -331,7 +391,7 @@ input:-moz-placeholder {
 	height: 600px;
 }
 .b-slider__container {
-	
+	width: 100%;
 }
 .b-slider__container-for-fon {
     position: absolute;
@@ -377,17 +437,24 @@ input:-moz-placeholder {
 		height: 600px;
 		position: relative;
 	}
+	.b-slider__container-for-fon {
+		width: 100%;
+	}
 		.b-slider .b-slider__img-for-slide--fon {
 			height: 600px;
+			width: 100%;
 		}
 		.b-slider .slide h1 {
 			font-family: 'PTSerif-Bold';
 			font-size: 44px;
 			width: 41%;
-			color: #000;
+			color: #fff;
 			margin-left: 25px;
 			margin-top: 165px;
 			margin-bottom: 35px;
+			max-height: 115px;
+			width: 460px;
+			overflow: hidden;
 		}
 		.b-slider .slide p {
 			font-family: 'PTSansRegular';
@@ -395,6 +462,8 @@ input:-moz-placeholder {
 			width: 41%;
 			color: #fff;
 			margin-left: 25px;
+			max-height: 70px;
+			overflow: hidden;
 		}
 		.b-slider .slide .p-more {
 			font-size: 16px;
@@ -607,13 +676,13 @@ input:-moz-placeholder {
 		}
 		.b-services .left-arrow {
 			position: absolute;
-			top: 50%;
-			left: -50px;
+			top: 45%;
+			left: -25px;
 			cursor: pointer;
 		}
 		.b-services .right-arrow {
 			position: absolute;
-			top: 50%;
+			top: 45%;
 			right: -25px;
 			cursor: pointer;
 		}
@@ -685,7 +754,7 @@ input:-moz-placeholder {
 		.b-otzivi .b-otzivi__cont__description {
 			margin-top: 25px;
 			overflow: hidden;
-			max-height: 100px;
+			max-height: 95px;
 		}
 			.b-otzivi .b-otzivi__cont__description p {
 				font-family: 'PTSerifRegular';

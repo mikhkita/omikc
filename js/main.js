@@ -93,14 +93,31 @@ $(document).ready(function(){
     
     });
 */
+
+
+    //закрывание бабла
+    $(document).click( function(event){
+      if( $(event.target).closest(".babl").length ) 
+        return;
+      $(".babl").fadeOut("slow");
+      event.stopPropagation();
+    });
+
+    //поиск в меню
+    $('.b-nav .b-nav__menu li img').click(function() {
+        $('.b-nav .b-nav__menu li .input_search').fadeIn().css('width',120)
+    });
+
+
+
     $('.b-services__slider').slick({
-      autoplay: true,
-      autoplaySpeed: 5000,
-      speed: 1000,
-      dots: false,
-      slidesToShow: 3,
-      prevArrow: '<div class="arrow-cont left-arrow"><img class=" arrow" src="img/slider-2_arrow-prev.png"></div>',
-      nextArrow: '<div class="arrow-cont right-arrow"><img class=" arrow" src="img/slider-2_arrow-next.png"></div>'
+        autoplay: true,
+        autoplaySpeed: 5000,
+        speed: 1000,
+        dots: false,
+        slidesToShow: 3,
+        prevArrow: '<div class="arrow-cont left-arrow"><img class=" arrow" src="img/slider-2_arrow-prev.png"></div>',
+        nextArrow: '<div class="arrow-cont right-arrow"><img class=" arrow" src="img/slider-2_arrow-next.png"></div>'
     });
 
 
@@ -110,10 +127,10 @@ $(document).ready(function(){
         nextArrow: '<div class="b-block"><div class="arrow-cont right-arrow"><img class=" arrow" src="img/slider_arrow-next.png"></div></div>',
         dots: true,
         fade: true,
+        speed: 100,
         asNavFor: '.b-slider__container-for-fon'
     });
     $('.b-slider__container-for-fon').slick({
-        
         asNavFor: '.b-slider__container',
         dots: false
     });
