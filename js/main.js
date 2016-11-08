@@ -103,10 +103,28 @@ $(document).ready(function(){
       event.stopPropagation();
     });
 
+
+
+    var flag = 1;
     //поиск в меню
     $('.b-nav .b-nav__menu li img').click(function() {
-        $('.b-nav .b-nav__menu li .input_search').fadeIn().css('width',120)
+        $('.b-nav .b-nav__menu li .search-form').fadeIn();
+        flag = 0;
     });
+    //закрывание поиска
+    $(document).click( function(event){
+      if (flag == 0) {
+        flag = 1;
+        return;
+        }
+        else {
+            if( $(event.target).closest(".search-form").length ) 
+            return;
+        }
+      $(".search-form").fadeOut("slow");
+      event.stopPropagation();
+    });
+
 
 
 
@@ -127,12 +145,13 @@ $(document).ready(function(){
         nextArrow: '<div class="b-block"><div class="arrow-cont right-arrow"><img class=" arrow" src="img/slider_arrow-next.png"></div></div>',
         dots: true,
         fade: true,
-        speed: 100,
+        speed: 200,
         asNavFor: '.b-slider__container-for-fon'
     });
     $('.b-slider__container-for-fon').slick({
         asNavFor: '.b-slider__container',
-        dots: false
+        dots: false,
+        speed: 500,
     });
 
 });
