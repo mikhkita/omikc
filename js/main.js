@@ -107,10 +107,16 @@ $(document).ready(function(){
 
     var flag = 1;
     //поиск в меню
-    $('.b-nav .b-nav__menu li img').click(function() {
-        $('.b-nav .b-nav__menu li .search-form').fadeIn();
+    $('.b-nav .b-nav__menu .open_my_form').click(function() {
+        $('.b-nav .b-nav__menu .open_my_form').hide();
+        $('.right-cont .my_form').animate({
+            'left': 0
+        });
+        $('.left-cont ul').animate({
+            'margin-left': -217
+        });
         flag = 0;
-    });
+      });
     //закрывание поиска
     $(document).click( function(event){
       if (flag == 0) {
@@ -118,14 +124,18 @@ $(document).ready(function(){
         return;
         }
         else {
-            if( $(event.target).closest(".search-form").length ) 
+            if( $(event.target).closest(".my_form").length ) 
             return;
         }
-      $(".search-form").fadeOut("slow");
+        $('.right-cont .my_form').animate({
+            'left': 217
+        });
+        $('.left-cont ul').animate({
+            'margin-left': 0
+        });
+        $('.b-nav .b-nav__menu .open_my_form').fadeIn();
       event.stopPropagation();
     });
-
-
 
 
     $('.b-services__slider').slick({
@@ -144,13 +154,18 @@ $(document).ready(function(){
         prevArrow: '<div class="b-block"><div class="arrow-cont left-arrow"><img class=" arrow" src="img/slider_arrow-prev.png"></div></div>',
         nextArrow: '<div class="b-block"><div class="arrow-cont right-arrow"><img class=" arrow" src="img/slider_arrow-next.png"></div></div>',
         dots: true,
+        infinite: true,
+        speed: 0,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         fade: true,
-        speed: 200,
         asNavFor: '.b-slider__container-for-fon'
     });
     $('.b-slider__container-for-fon').slick({
         asNavFor: '.b-slider__container',
         dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         speed: 500,
     });
 
