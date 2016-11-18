@@ -137,13 +137,15 @@ $(document).ready(function(){
       event.stopPropagation();
     });
 
-
+    var count_services = 3;
+    if (screen.width <= 768)
+        count_services = 1;
     $('.b-services__slider').slick({
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 1000,
         dots: false,
-        slidesToShow: 3,
+        slidesToShow: count_services,
         prevArrow: '<div class="arrow-cont left-arrow"><img class=" arrow" src="img/slider-2_arrow-prev.png"></div>',
         nextArrow: '<div class="arrow-cont right-arrow"><img class=" arrow" src="img/slider-2_arrow-next.png"></div>'
     });

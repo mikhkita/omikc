@@ -110,7 +110,9 @@
 .vk-img:before {
 	content: 'a';
 }
-
+.b-top-mobile {
+	display: none;
+}
 
 html,
 body {
