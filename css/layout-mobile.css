@@ -75,10 +75,8 @@ body {
 }
 .b-top-mobile {
 	display: block;
-	position: absolute;
-	z-index: 100;
-	top: 15px;
-	left: 15px;
+	background-color: #fff;
+	padding: 30px 20px;
 }
 .b-top-mobile .circle .cont {
 	position: relative;
@@ -94,6 +92,7 @@ body {
 	position: fixed;
 	background: rgba(0,155,220,0.5);
 	border-radius: 50%;
+    z-index: 100;
 }
 .b-top-mobile .circle-menu {
 	right: 30px;
@@ -117,7 +116,7 @@ body {
 			text-transform: uppercase;
 			font-family: 'ProximaNova-Semibold';
 			font-size: 20px;
-			color: #fff;
+			color: #515151;
 		}
 	
 .b-slider .b-slider__img-for-slide-mobile {
@@ -138,9 +137,11 @@ body {
 }
 .b-slider .slick-dots li {
 	margin: 5px;
+	width: 60px;
+	height: 60px;
 }
 .b-slider .slick-dots li button:before {
-	font-size: 50px;
+	font-size: 70px;
 	color: #fff; 
 	opacity: 0.5;
 }
@@ -149,7 +150,7 @@ body {
 	color: #fff;
 }
 .b-slider .slick-dots {
-	bottom: 40px;
+	bottom: 00px;
 	width: auto;
 	left: 45%;
 }
@@ -176,15 +177,15 @@ body {
 			width: 41%;
 			color: #fff;
 			margin-left: 25px;
-			margin-top: 145px;
-			margin-bottom: 35px;
+			margin-top: 100px;
+			margin-bottom: 45px;
 			max-height: 135px;
 			width: 530px;
 			overflow: hidden;
 		}
 		.b-slider .slide p {
 			font-family: 'PTSansRegular';
-			font-size: 26px;
+			font-size: 28px;
 			width: 460px;
 			color: #fff;
 			margin-left: 25px;
@@ -192,10 +193,10 @@ body {
 			overflow: hidden;
 		}
 		.b-slider .slide .p-more {
-			font-size: 26px;
+			font-size: 28px;
 			color: #fff;
 			margin-left: 25px;
-			margin-top: 20px;
+			margin-top: 30px;
 		}
 		.b-slider .slide .p-more a {
 			color: #fff;
@@ -206,15 +207,16 @@ body {
 				text-decoration: none;
 			}
 		.b-slider .slide .button {
-			margin-top: 15px;
-			font-size: 22px;
+			margin-top: 40px;
+			font-size: 28px;
 		    width: 240px;
 		    height: 60px;
 		    line-height: 60px;
 		}
 
 .b-title {
-	font-size: 55px;
+	font-size: 60px;
+	margin-bottom: 40px;
 }
 .b-about {
 	margin-top: 10px;
@@ -231,12 +233,13 @@ body {
 		width: 100%;
 		color: #444;
 		font-family: 'PTSerifRegular';
-		font-size: 32px;
+		font-size: 28px;
 		margin-top: 20px;
 	}
 	.b-about ul {
 		width: 100%;
 		color: #444;
+		margin-bottom: 40px;
 	}
 		.b-about ul li {
 			font-family: 'PTSerifRegular';
@@ -315,6 +318,8 @@ body {
 }
 	.b-services .b-title {
 		float: none;
+		text-align: left;
+		margin-left: 20px;
 	}
 	.b-services .all-services {
 		float: none;
@@ -323,7 +328,7 @@ body {
 		.b-services .all-services a {
 			text-decoration: underline;
 			font-family: 'PTSansRegular';
-			font-size: 30px;
+			font-size: 35px;
 			color: #42a7de;
 		}
 		.b-services .all-services a:hover {
@@ -406,7 +411,7 @@ body {
 }
 	.b-otzivi .b-title {
 		float: left;
-		font-size: 70px;
+		font-size: 60px;
 		margin-left: 20px;
 	}
 	.b-otzivi .all-services {
@@ -415,7 +420,7 @@ body {
 		margin-right: 20px;
 	}
 		.b-otzivi .all-services a {
-			font-size: 40px;
+			font-size: 35px;
 		}
 		.b-otzivi .all-services a:hover {
 			text-decoration: none;
@@ -431,6 +436,7 @@ body {
 		background-repeat: no-repeat;
 		background-color: #fff;
 		margin: 0 auto;
+		padding-bottom: 50px;
 	}
 		.b-otzivi .b-otzivi__cont:last-child {
 			float: none;
@@ -458,30 +464,30 @@ body {
 			}
 			.b-otzivi .b-otzivi__cont__title__text p {
 				font-family: 'PTSansRegular';
-				font-size: 30px;
+				font-size: 28px;
 				margin-top: 5px;
 			}
 		.b-otzivi .b-otzivi__cont__description {
 			margin-top: 25px;
 			overflow: hidden;
-			max-height: 200px;
+			max-height: 190px;
 		}
 			.b-otzivi .b-otzivi__cont__description p {
 				font-family: 'PTSerifRegular';
-				font-size: 30px;
+				font-size: 28px;
 				
 			}
 			.b-otzivi .read-more {
 				font-family: 'PTSansRegular';
-				font-size: 25px;
+				font-size: 28px;
 				text-align: right;
 				color: #42a7de;
-				margin-top: 10px;
+				margin-top: 20px;
 			}
 				.b-otzivi .read-more a {
 					color: #42a7de;
 					font-family: 'PTSerifRegular';
-					font-size: 25px;
+					font-size: 28px;
 					text-decoration: underline;
 				}
 					.b-otzivi .b-otzivi__cont__description .read-more a:hover {

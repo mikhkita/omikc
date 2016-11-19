@@ -15,6 +15,19 @@ $(document).ready(function(){
     $(window).resize(resize);
     resize();
 
+    var isDesktop = isTablet = isMobile = false; 
+
+    if( myWidth > 1240 ){ 
+        isDesktop = true; 
+    }
+    else 
+        if( myWidth > 768 ){ 
+        isTablet = true; 
+        }
+        else{ 
+            isMobile = true; 
+        } 
+
     $.fn.placeholder = function() {
         if(typeof document.createElement("input").placeholder == 'undefined') {
             $('[placeholder]').focus(function() {
@@ -137,15 +150,12 @@ $(document).ready(function(){
       event.stopPropagation();
     });
 
-    var count_services = 3;
-    if (screen.width <= 768)
-        count_services = 1;
     $('.b-services__slider').slick({
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 1000,
         dots: false,
-        slidesToShow: count_services,
+        slidesToShow: (isMobile)?1:3, 
         prevArrow: '<div class="arrow-cont left-arrow"><img class=" arrow" src="img/slider-2_arrow-prev.png"></div>',
         nextArrow: '<div class="arrow-cont right-arrow"><img class=" arrow" src="img/slider-2_arrow-next.png"></div>'
     });
