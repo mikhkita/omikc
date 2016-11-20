@@ -162,7 +162,7 @@ $(document).ready(function(){
 
 
     $('.b-slider__container').slick({
-        arrows: true,
+        arrows: (isMobile)?false:true,
         prevArrow: '<div class="b-block"><div class="arrow-cont left-arrow"><img class=" arrow" src="img/slider_arrow-prev.png"></div></div>',
         nextArrow: '<div class="b-block"><div class="arrow-cont right-arrow"><img class=" arrow" src="img/slider_arrow-next.png"></div></div>',
         dots: true,

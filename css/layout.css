@@ -538,15 +538,21 @@ box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
 			background-size: no-repeat; 
 			background-size: cover;
 		}
+		.b-slider .slide-cont-table {
+			display: table;
+		}
+		.b-slider .slide-cont-table-cell {
+			display: table-cell;
+			height: 600px;
+			vertical-align: middle;
+		}
 		.b-slider .slide h1 {
 			font-family: 'PTSerif-Bold';
 			font-size: 44px;
 			width: 41%;
 			color: #fff;
 			margin-left: 25px;
-			margin-top: 165px;
 			margin-bottom: 35px;
-			max-height: 115px;
 			width: 460px;
 			overflow: hidden;
 		}
@@ -556,7 +562,6 @@ box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
 			width: 460px;
 			color: #fff;
 			margin-left: 25px;
-			max-height: 70px;
 			overflow: hidden;
 		}
 		.b-slider .slide .p-more {

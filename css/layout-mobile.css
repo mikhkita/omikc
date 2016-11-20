@@ -11,9 +11,7 @@ body {
 }
 .b-block{
 	position: relative;
-	width: 750px !important;
-	margin: 0px auto;
-	overflow: hidden;
+	width: 690px !important;
 }
 
 .b-icon:before{
@@ -76,7 +74,7 @@ body {
 .b-top-mobile {
 	display: block;
 	background-color: #fff;
-	padding: 30px 20px;
+	padding: 30px 0px;
 }
 .b-top-mobile .circle .cont {
 	position: relative;
@@ -126,7 +124,7 @@ body {
 	opacity: 0.6;
 	width: 100%;
 	z-index: 0;
-	height: 600px;
+	height: 700px;
 }
 .b-slider .b-slider__img-for-slide {
 	display: none;
@@ -158,28 +156,34 @@ body {
 		text-align: left;
 	}
 	.b-slider .slide {	
-		height: 600px;
+		height: 700px;
 		position: relative;
 	}
 	.b-slider__container-for-fon {
 		width: 100%;
 	}
 		.b-slider .b-slider__img-for-slide--fon {
-			height: 600px;
+			height: 700px;
 			width: 100%;
 			background-position: center; 
 			background-size: no-repeat; 
 			background-size: cover;
+		}
+		.b-slider .slide-cont-table {
+			display: table;
+		}
+		.b-slider .slide-cont-table-cell {
+			display: table-cell;
+			height: 700px;
+			vertical-align: middle;
 		}
 		.b-slider .slide h1 {
 			font-family: 'PTSerif-Bold';
 			font-size: 50px;
 			width: 41%;
 			color: #fff;
-			margin-left: 25px;
-			margin-top: 100px;
+			margin-left: 0px;
 			margin-bottom: 45px;
-			max-height: 135px;
 			width: 530px;
 			overflow: hidden;
 		}
@@ -188,48 +192,52 @@ body {
 			font-size: 28px;
 			width: 460px;
 			color: #fff;
-			margin-left: 25px;
-			max-height: 70px;
+			margin-left: 0px;
 			overflow: hidden;
 		}
 		.b-slider .slide .p-more {
 			font-size: 28px;
 			color: #fff;
-			margin-left: 25px;
+			margin-left: 0px;
 			margin-top: 30px;
 		}
 		.b-slider .slide .p-more a {
 			color: #fff;
 			text-decoration: underline;
-			font-family: 'HelveticaRegular';
+			font-family: 'PTSansRegular';
 		}
 			.b-slider .slide .p-more a:hover {
 				text-decoration: none;
 			}
 		.b-slider .slide .button {
+			margin-left: 0px;
 			margin-top: 40px;
 			font-size: 28px;
-		    width: 240px;
-		    height: 60px;
+		    width: 260px;
+		    height: 70px;
 		    line-height: 60px;
 		}
 
 .b-title {
+	padding-top: 40px;
 	font-size: 60px;
 	margin-bottom: 40px;
 }
 .b-about {
-	margin-top: 10px;
+	margin-top: 0px;
 	padding-bottom: 0px;
 	overflow: hidden;
 }
+	.b-about .b-block {
+		overflow: visible;
+	}
 	.b-about .b-title {
-		padding-top: 20px;
-		width: 80%;
-		margin-left: 20px;
+		width: 100%;
+		margin-left: 0px;
+		padding-top: 40px;
 	}
 	.b-about p {
-		margin-left: 20px;
+		margin-left: 0px;
 		width: 100%;
 		color: #444;
 		font-family: 'PTSerifRegular';
@@ -246,12 +254,14 @@ body {
 			font-size: 28px;
 			margin-top: 12px;
 			list-style-type: disc;
-    		margin-left: 50px;
-    		margin-right: 20px;
+    		margin-left: 30px;
+    		margin-right: 0px;
 		}
 	.b-about .b-about__img {
 		position: initial;
 		margin-bottom: -12px;
+		width: 1000px;
+		margin-left: -30px;
 	}
 
 .b-6 {
@@ -270,7 +280,8 @@ body {
 	.b-6 li {
 		float: none;
 		background-color: #75c2f8;
-		width: 100%;
+		width: 750px;
+		margin-left: -30px;
 	}
 	.b-6 li .clearfix {
 		width: 490px;
@@ -288,11 +299,11 @@ body {
 
 
 		.b-6 li:nth-child(2) {
-			margin-left: 0px;
+			margin-left: -30px;
 			background-color: #009bdd;
 		}
 		.b-6 li:nth-child(3) {
-			margin-left: 0px;
+			margin-left: -30px;
 			background-color: #157dc4;
 		}
 
@@ -312,14 +323,14 @@ body {
 			}
 
 .b-services {
-	margin-top: 65px;
+	margin-top: 0px;
 	padding-bottom: 80px;
 	overflow: hidden;
 }
 	.b-services .b-title {
 		float: none;
 		text-align: left;
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 	.b-services .all-services {
 		float: none;
@@ -336,7 +347,7 @@ body {
 		}
 	.b-services .b-services__slider {
 		
-		width: 600px;
+		width: 690px;
 		margin: 0 auto;
 		margin-top: 40px;
 	}
@@ -359,7 +370,7 @@ body {
 				left: 0px;
 
 			background-color: #009bdc;
-			min-height: 360px;
+			min-height: 370px;
 		}
 			.b-services .b-services__slide__p p {
 				font-family: 'PTSansRegular';
@@ -398,26 +409,27 @@ body {
 			width: 85%;
 		}
 		.b-services .left-arrow {
-			left: -50px;
+			left: -25px;
 		}
 		.b-services .right-arrow {
-			right: -50px;
+			right: -25px;
 		}
 
 .b-otzivi {
 	padding: 70px 0px;
 	background-color: #f5f5f5;
 	overflow: hidden;
+	padding-top: 0px;
 }
 	.b-otzivi .b-title {
 		float: left;
 		font-size: 60px;
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 	.b-otzivi .all-services {
 		float: right;
-		margin-top: 20px;
-		margin-right: 20px;
+		margin-top: 65px;
+		margin-right: 0px;
 	}
 		.b-otzivi .all-services a {
 			font-size: 35px;
@@ -426,10 +438,10 @@ body {
 			text-decoration: none;
 		}
 	.b-otzivi .b-otzivi__container {
-		margin-top: 55px;
+		margin-top: 0px;
 	}
 	.b-otzivi .b-otzivi__cont {
-		width: 80%;
+		width: auto;
 		float: none;
 		background: url(../img/otziv-list.png);
 		background-position: 117% -5%;
@@ -507,12 +519,12 @@ body {
 		display: none;
 	}
 		.b-footer .b-footer__colum:first-child {
-			margin-right: 20px;
+			margin-right: 0px;
 			float: right;
 			display: block;
 		}
 		.b-footer .b-footer__colum:last-child {
-			margin-left: 20px;
+			margin-left: 0px;
 			float: left;
 			display: block;
 		}
