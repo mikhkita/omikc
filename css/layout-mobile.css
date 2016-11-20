@@ -9,6 +9,9 @@ body {
 	background-color: #fff;
 	color: #472275;
 }
+.b {
+	overflow: hidden;
+}
 .b-block{
 	position: relative;
 	width: 690px !important;
