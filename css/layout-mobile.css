@@ -81,8 +81,8 @@ body {
 }
 .b-top-mobile .circle .cont i {
 	position: absolute;
-    left: 18px;
-    top: 12px;
+    left: 17px;
+    top: 14px;
 }
 .b-top-mobile .circle {
 	width: 70px;
@@ -219,9 +219,9 @@ body {
 		}
 
 .b-title {
-	padding-top: 40px;
+	padding-top: 60px;
 	font-size: 60px;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 .b-about {
 	margin-top: 0px;
@@ -234,7 +234,7 @@ body {
 	.b-about .b-title {
 		width: 100%;
 		margin-left: 0px;
-		padding-top: 40px;
+		padding-top: 60px;
 	}
 	.b-about p {
 		margin-left: 0px;
@@ -335,6 +335,27 @@ body {
 	.b-services .all-services {
 		float: none;
 		margin-top: 20px;
+		display: none;
+	}
+	.b-services .button-blue,
+	.b-otzivi .button-blue {
+		display: block;
+		font-family: 'PTSansRegular';
+		border-radius: 5px;
+		width: 260px;
+		height: 70px;
+		text-align: center;
+		line-height: 70px;
+		font-size: 32px;
+		color: #009bdc;
+		border: 2px solid #009bdc;
+		margin: 0 auto;
+		margin-top: 60px;
+	}
+	.b-services .button:hover,
+	.b-otzivi .button:hover{
+		background-color: #009bdc;
+		color: #fff;
 	}
 		.b-services .all-services a {
 			text-decoration: underline;
@@ -347,20 +368,21 @@ body {
 		}
 	.b-services .b-services__slider {
 		
-		width: 690px;
-		margin: 0 auto;
-		margin-top: 40px;
+		width: 750px;
+		margin-left: -30px;
+		margin-top: 0px;
 	}
 		.b-services .slide {
-			margin: 0px 15px;
+			margin: 0px 30px;
 			height: 700px;
 			position: relative;
 		}
 		.b-services .b-services__slide__img {
 			height: 330px;
+			overflow: hidden;
 		}
 			.b-services .b-services__slide__img img {
-				height: 100%;
+				height: auto;
 				width: 100%;
 			}
 		.b-services .b-services__slide__p {
@@ -430,6 +452,7 @@ body {
 		float: right;
 		margin-top: 65px;
 		margin-right: 0px;
+		display: none;
 	}
 		.b-otzivi .all-services a {
 			font-size: 35px;
@@ -444,7 +467,7 @@ body {
 		width: auto;
 		float: none;
 		background: url(../img/otziv-list.png);
-		background-position: 117% -5%;
+		background-position: 110% -4%;
 		background-repeat: no-repeat;
 		background-color: #fff;
 		margin: 0 auto;
@@ -467,12 +490,13 @@ body {
 			}
 			.b-otzivi .b-otzivi__cont__title__text {
 				display: table-cell;
-				vertical-align: top;
+				vertical-align: middle;
 				width: 380px;
 			}
 			.b-otzivi .b-otzivi__cont__title__text h3 {
 				font-family: 'PTSansBold';
 				font-size: 40px;
+				margin-top: 0px;
 			}
 			.b-otzivi .b-otzivi__cont__title__text p {
 				font-family: 'PTSansRegular';
