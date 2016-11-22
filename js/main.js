@@ -181,4 +181,15 @@ $(document).ready(function(){
         speed: 500,
     });
 
+
+    var $container = $('#container');
+
+    // инициализация
+    $('.b-otzivi__container').masonry({
+        columnWidth: 2,
+
+        // обращаемся к пунктам
+        itemSelector: '.b-otzivi__cont'
+    });
+
 });
