@@ -192,4 +192,40 @@ $(document).ready(function(){
         itemSelector: '.b-otzivi__cont'
     });
 
+
+    //переопределение высоты блоков товаров
+    //по 3 блока в строке 
+
+    var maxHeight = 0;
+    var index = 1;
+    var row_height = [];
+    var k = 0;
+
+    $(".b-news__cont").each(function(){
+        //ищем максимальную высоту в строке
+        if ( $(this).height() > maxHeight ) 
+            maxHeight = $(this).height();
+        //если прочитали строку
+        //запоминаем максимальную высоту в строке
+        //обнуляем максимум для новой строки
+        if (index%3 == 0) {
+            row_height[k] = maxHeight;
+            k++;
+            maxHeight = 0;
+        }
+        //считаем количество пройденых блоков в строке
+        index++;
+    });
+
+    //переопределяем высоты
+    index = 1;
+    k=0;
+    $(".b-news__cont").each(function(){
+        $(this).height(row_height[k]);
+        if (index%3 == 0)
+            k++;
+        index++;
+        console.log($(this).height());
+    });
+    
 });
