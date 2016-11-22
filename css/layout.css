@@ -333,12 +333,12 @@ box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
 		}
 	.b-nav .b-nav__menu {
 		float: left;
-		margin-left: 100px;
+		margin-left: 115px;
 		margin-top: 20px;
 	}
 		.b-nav .b-nav__menu li {
 			float: left;
-			margin-right: 40px;
+			margin-right: 43px;
 		}
 			.b-nav .b-nav__menu li:last-child {
 				margin-right: 0px;
@@ -448,7 +448,11 @@ box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
 					position: relative;
 					overflow-x: hidden; 
 					height: 35px;
-					margin-top: -5px;
+					margin-top: -6px;
+					margin-right: -2px;
+				}
+				.b-nav__menu .container li:first-child {
+					margin-right: 35px;
 				}
 				.left-cont {
 					width: 217px;
@@ -465,7 +469,8 @@ box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
 		text-align: right;
 	}
 		.b-nav .b-nav__get_call_back p:first-child {
-			padding-top: 10px;
+			padding-top: 5px;
+			margin-bottom: 4px;
 		}
 
 		.b-nav .b-nav__get_call_back a.phone {
@@ -625,13 +630,13 @@ box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
 .b-about {
 	margin-top: 30px;
 	text-align: left;
-	padding-bottom: 60px;
+	padding-bottom: 95px;
 }
 	.b-about .b-block {
 		position: initial;
 	}
 	.b-about .b-title {
-		padding-top: 50px;
+		padding-top: 45px;
 		width: 50%;
 	}
 	.b-about p {
@@ -648,13 +653,13 @@ box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
 		.b-about ul li {
 			font-family: 'PTSerifRegular';
 			font-size: 16px;
-			margin-top: 12px;
+			margin-top: 6px;
 			list-style-type: disc;
     		margin-left: 20px;
 		}
 	.b-about .b-about__img {
 		position: absolute;
-		left: 50%;
+		left: 51%;
 		bottom: 0px;
 	}
 
@@ -725,7 +730,7 @@ box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
 			}
 
 .b-services {
-	margin-top: 65px;
+	margin-top: 60px;
 	padding-bottom: 80px;
 	overflow: hidden;
 }
@@ -821,7 +826,8 @@ box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
 		}
 
 .b-otzivi {
-	padding: 70px 0px;
+	padding: 58px 0px;
+	padding-bottom: 88px;
 	background-color: #f5f5f5;
 }
 	.b-otzivi .b-title {
@@ -1135,7 +1141,7 @@ box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
 		font-family: 'PTSerif-Bold';
 		font-size: 48px;
 		color: #000;
-		padding-top: 30px;
+		padding-top: 22px;
 		text-align: left;
 	}
 
