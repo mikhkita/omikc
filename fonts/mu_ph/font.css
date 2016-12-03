@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'font3346';
+  src: url('font3346.eot');
+  src: url('font3346.woff2') format('woff2'),
+       url('font3346.woff') format('woff'),
+       url('font3346.ttf') format('truetype'),
+       url('font3346.svg#font3346') format('svg'),
+       url('font3346.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
