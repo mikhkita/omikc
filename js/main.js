@@ -154,7 +154,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 1000,
-        dots: false,
+        dots: (isMobile)?true:false,
         slidesToShow: (isMobile)?1:3, 
         prevArrow: '<div class="arrow-cont left-arrow"><img class=" arrow" src="img/slider-2_arrow-prev.png"></div>',
         nextArrow: '<div class="arrow-cont right-arrow"><img class=" arrow" src="img/slider-2_arrow-next.png"></div>'
