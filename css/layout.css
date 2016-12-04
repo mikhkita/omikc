@@ -1384,7 +1384,9 @@ background: linear-gradient(0deg, rgba(0, 0, 0,0.4) 11%, rgba(255, 255, 255, 0) 
 			margin-top: 3px;
 			text-align: left;
 		}
-
+.slideout-menu {
+	display: none;
+}
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-icon:before{

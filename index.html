@@ -43,315 +43,330 @@
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/masonry.js"></script>
+	<script type="text/javascript" src="js/slideout.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 <meta name="viewport" content="width=750, user-scalable=no">
 </head>
+
 <body>
-	<div class="b b-top-mobile">
-		<div class="b-block clearfix">
-			<div class="b-nav__logo clearfix">
-				<a href="#">
-					<img src="img/logo.png">
-					<h3>Центр Консультаций<br>и Медицинских<br>Осмотров</h3>
-				</a>
-				<div class="circle circle-menu"><a href="#"><div class="cont"><i class="menu_phone-img menu-img"></i></div></a></div>
-				<div class="circle circle-phone"><a href="tel:+79994514757"><div class="cont"><i class="menu_phone-img phone-img"></i></div></a></div>
+	<div id="menu" class="menu mobile-menu">
+		<h2>Меню</h2> 
+		<ul>
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Акции</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>     
+    </div>
+	<div class="panel" id="panel">
+		<div class="b b-top-mobile">
+			<div class="b-block clearfix">
+				<div class="b-nav__logo clearfix">
+					<a href="#">
+						<img src="img/logo.png">
+						<h3>Центр Консультаций<br>и Медицинских<br>Осмотров</h3>
+					</a>
+					<div class="circle circle-menu js-slideout-toggle" ><a ><div class="cont"><i class="menu_phone-img menu-img"></i></div></a></div>
+					<div class="circle circle-phone"><a href="tel:+79994514757"><div class="cont"><i class="menu_phone-img phone-img"></i></div></a></div>
+				</div>
 			</div>
-		</div>
-	</div>
-	<div class="b b-top">
-		<div class="b-block clearfix">
-			<div class="b-top--left">
-				<ul class="clearfix">
-					<li><a class="active" href="#">Физическим лицам</a></li>
-					<li>
-						<a href="#">Корпоративным клиентам</a>
-						<div class="babl"><div class="trian"><div class="triangle"></div></div><p>У нас есть специальная версия сайта для корпоративных клиентов</p></div>
-					</li>
-				</ul>
-			</div>
-			<div class="b-top--right">
-				<div class="clearfix">
-					<a href="#" class="left">Вход</a>
-					<a href="#" class="left" style="margin-top: 2px;"><i class="enter-img"></i></a>
+		</div>	
+		<div class="b b-top">
+			<div class="b-block clearfix">
+				<div class="b-top--left">
+					<ul class="clearfix">
+						<li><a class="active" href="#">Физическим лицам</a></li>
+						<li>
+							<a href="#">Корпоративным клиентам</a>
+							<div class="babl"><div class="trian"><div class="triangle"></div></div><p>У нас есть специальная версия сайта для корпоративных клиентов</p></div>
+						</li>
+					</ul>
+				</div>
+				<div class="b-top--right">
+					<div class="clearfix">
+						<a href="#" class="left">Вход</a>
+						<a href="#" class="left" style="margin-top: 2px;"><i class="enter-img"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="b b-nav">
-		<div class="b-block clearfix">
-			<div class="b-nav__logo clearfix">
-				<a href="#"><img src="img/logo.png">
-				<h3>Центр Консультаций<br>и Медицинских<br>Осмотров</h3></a>
-			</div>
-			<div class="b-nav__menu">
-				<ul class="clearfix">
-					<li><a href="#">О компании</a></li>
-					<li><a href="#">Услуги</a></li>
-					<li><a href="#">Акции</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li>
-						<div class="container clearfix">
-							<div class="left-cont">
-								<ul>
-									<li><a href="#">Новости</a></li>
-									<li><a href="#">Контакты</a></li>
-								</ul>
-							</div>
-							<div class="right-cont">
-								<img class="open_my_form" src="img/loopa.png">
-								<div class="my_form">
-									<form class="clearfix">
-										<input class="" type="text" placeholder="Поиск по сайту" name="q" value="" maxlength="50">
-										<input class="" name="s" type="submit" value=''>
-									</form>
+		<div class="b b-nav">
+			<div class="b-block clearfix">
+				<div class="b-nav__logo clearfix">
+					<a href="#"><img src="img/logo.png">
+					<h3>Центр Консультаций<br>и Медицинских<br>Осмотров</h3></a>
+				</div>
+				<div class="b-nav__menu">
+					<ul class="clearfix">
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li>
+							<div class="container clearfix">
+								<div class="left-cont">
+									<ul>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+								<div class="right-cont">
+									<img class="open_my_form" src="img/loopa.png">
+									<div class="my_form">
+										<form class="clearfix">
+											<input class="" type="text" placeholder="Поиск по сайту" name="q" value="" maxlength="50">
+											<input class="" name="s" type="submit" value=''>
+										</form>
+									</div>
 								</div>
 							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="b-nav__get_call_back">
-				<p><a class="phone" href="tel:+79994514757">+7 (999) 451-47-57</a></p>
-				<p><a class="call fancy" data-block="#b-popup-1" href="#">Заказать звонок</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="b-nav__get_call_back">
+					<p><a class="phone" href="tel:+79994514757">+7 (999) 451-47-57</a></p>
+					<p><a class="call fancy" data-block="#b-popup-1" href="#">Заказать звонок</a></p>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="b b-slider">
-		<img class="b-slider__img-for-slide" src="img/slide-1_ziga_fon.png">
-		<div class="b-slider__img-for-slide-mobile"></div>
-		<div class="b-slider__container">
-			<div class="slide">	
-				<div class="b-block">
-					<div class="slide-cont-table">
-						<div class="slide-cont-table-cell">
-							<h1>Бесплатный осмотр для пенсионеров</h1>
-							<p>Акция действует при предъявлении пенсионного удостоверения</p>
-							<p class="p-more"><a href="#">Подробнее</a> &#8594;</p>
-							<a class="button button-white fancy" data-block="#b-popup-1" href="#">Заказат осмотр</a>
+		<div class="b b-slider">
+			<img class="b-slider__img-for-slide" src="img/slide-1_ziga_fon.png">
+			<div class="b-slider__img-for-slide-mobile"></div>
+			<div class="b-slider__container">
+				<div class="slide">	
+					<div class="b-block">
+						<div class="slide-cont-table">
+							<div class="slide-cont-table-cell">
+								<h1>Бесплатный осмотр для пенсионеров</h1>
+								<p>Акция действует при предъявлении пенсионного удостоверения</p>
+								<p class="p-more"><a href="#">Подробнее</a> &#8594;</p>
+								<a class="button button-white fancy" data-block="#b-popup-1" href="#">Заказат осмотр</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">	
+					<div class="b-block">
+						<div class="slide-cont-table">
+							<div class="slide-cont-table-cell">
+								<h1>Платный осмотр для пенсионеров
+								осмотр для пенсионеров</h1>
+								<p>Другой текст....Другой текст Другой текст Другой текст Акция действует при предъявлении пенсионного удостоверения Другой текст....Другой Другой текст....Другой</p>
+								<p class="p-more"><a href="#">Подробнее</a> &#8594;</p>
+								<a class="button button-white fancy" data-block="#b-popup-1" href="#">Заказат осмотр</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">	
+					<div class="b-block">
+						<div class="slide-cont-table">
+							<div class="slide-cont-table-cell">
+								<h1>пример текста для третьего слайда</h1>
+								<p>Акция действует при предъявлении пенсионного удостоверения</p>
+								<p class="p-more"><a href="#">Подробнее</a> &#8594;</p>
+								<a class="button button-white fancy" data-block="#b-popup-1" href="#">Заказат осмотр</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="slide">	
-				<div class="b-block">
-					<div class="slide-cont-table">
-						<div class="slide-cont-table-cell">
-							<h1>Платный осмотр для пенсионеров
-							осмотр для пенсионеров</h1>
-							<p>Другой текст....Другой текст Другой текст Другой текст Акция действует при предъявлении пенсионного удостоверения Другой текст....Другой Другой текст....Другой</p>
-							<p class="p-more"><a href="#">Подробнее</a> &#8594;</p>
-							<a class="button button-white fancy" data-block="#b-popup-1" href="#">Заказат осмотр</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="slide">	
-				<div class="b-block">
-					<div class="slide-cont-table">
-						<div class="slide-cont-table-cell">
-							<h1>пример текста для третьего слайда</h1>
-							<p>Акция действует при предъявлении пенсионного удостоверения</p>
-							<p class="p-more"><a href="#">Подробнее</a> &#8594;</p>
-							<a class="button button-white fancy" data-block="#b-popup-1" href="#">Заказат осмотр</a>
-						</div>
-					</div>
-				</div>
+			<div class="b-slider__container-for-fon">
+				<div class="sl b-slider__img-for-slide--fon" style="background-image: url(img/slide-1_font.jpg);"></div>
+				<div class="sl b-slider__img-for-slide--fon" style="background-image: url(img/slide-1_font.jpg);"></div>
+				<div class="sl b-slider__img-for-slide--fon" style="background-image: url(img/slide-1_font.jpg);"></div>
 			</div>
 		</div>
-		<div class="b-slider__container-for-fon">
-			<div class="sl b-slider__img-for-slide--fon" style="background-image: url(img/slide-1_font.jpg);"></div>
-			<div class="sl b-slider__img-for-slide--fon" style="background-image: url(img/slide-1_font.jpg);"></div>
-			<div class="sl b-slider__img-for-slide--fon" style="background-image: url(img/slide-1_font.jpg);"></div>
-		</div>
-	</div>
-	<div class="b b-about">
-		<div class="b-block">
-			<h2 class="b-title">О нашем центре</h2>
-			<p>Основными видами нашей деятельности являются:</p>
-			<ul>
-				<li class="anim fadeLeft" data-anim="fadeLeft" data-delay="200" data-cont=".b-about">проведение периодических и предварительных медицинских осмотров сотрудников</li>
-				<li class="anim fadeLeft" data-anim="fadeLeft" data-delay="400" data-cont=".b-about">проведение предрейсовых и послерейсовых медицинских осмотров</li>
-				<li class="anim fadeLeft" data-anim="fadeLeft" data-delay="600" data-cont=".b-about">проведение медицинских освидетельствований и экспертиз</li>
-				<li class="anim fadeLeft" data-anim="fadeLeft" data-delay="800" data-cont=".b-about">осуществление амбулаторно-поликлинической помощи населению консультации узких специалистов.</li>
-			</ul>
-			<img  class="b-about__img" src="img/slide2_fon_img.png">
-		</div>
-	</div>
-	<div class="clearfix">
-		<div class="b-6__left-block"></div>
-		<div class="b-6__right-block"></div>
-		<div class="b b-6">
+		<div class="b b-about">
 			<div class="b-block">
-				<ul class="clearfix">
-					<li>
-						<div class="clearfix">
-							<img class="anim fadeDown" data-anim="fadeDown" data-delay="200" data-cont=".b-6" src="img/slide4-1.png">
-							<div class="b-6__slide-p anim fadeDown" data-anim="fadeDown" data-delay="200" data-cont=".b-6"><p>Высокое качество оказания услуг и индивидуальный подход к клиентам</p></div>
-						</div>
-					</li>
-					<li>
-						<div class="clearfix">
-							<img class="anim fadeDown" data-anim="fadeDown" data-delay="400" data-cont=".b-6" src="img/slide4-2.png">
-							<div class="b-6__slide-p anim fadeDown" data-anim="fadeDown" data-delay="400" data-cont=".b-6"><p>Своевременное<br>предоставление итоговых документов по окончании оказания услуг</p></div>
-						</div>
-					</li>
-					<li>
-						<div class="clearfix">
-							<img class="anim fadeDown" data-anim="fadeDown" data-delay="600" data-cont=".b-6" src="img/slide4-3.png">
-							<div class="b-6__slide-p anim fadeDown" data-anim="fadeDown" data-delay="600" data-cont=".b-6"><p>Удобное месторасположение</p></div>
-						</div>
-					</li>
+				<h2 class="b-title">О нашем центре</h2>
+				<p>Основными видами нашей деятельности являются:</p>
+				<ul>
+					<li class="anim fadeLeft" data-anim="fadeLeft" data-delay="200" data-cont=".b-about">проведение периодических и предварительных медицинских осмотров сотрудников</li>
+					<li class="anim fadeLeft" data-anim="fadeLeft" data-delay="400" data-cont=".b-about">проведение предрейсовых и послерейсовых медицинских осмотров</li>
+					<li class="anim fadeLeft" data-anim="fadeLeft" data-delay="600" data-cont=".b-about">проведение медицинских освидетельствований и экспертиз</li>
+					<li class="anim fadeLeft" data-anim="fadeLeft" data-delay="800" data-cont=".b-about">осуществление амбулаторно-поликлинической помощи населению консультации узких специалистов.</li>
 				</ul>
+				<img  class="b-about__img" src="img/slide2_fon_img.png">
 			</div>
 		</div>
-	</div>
-	<div class="b b-services page-home">
-		<div class="b-block">
-			<div class="clearfix">
-				<h2 class="b-title">Справки и медицинские осмотры</h2>
-				<p class="all-services"><a href="#">Все услуги</a></p>
+		<div class="clearfix">
+			<div class="b-6__left-block"></div>
+			<div class="b-6__right-block"></div>
+			<div class="b b-6">
+				<div class="b-block">
+					<ul class="clearfix">
+						<li>
+							<div class="clearfix">
+								<img class="anim fadeDown" data-anim="fadeDown" data-delay="200" data-cont=".b-6" src="img/slide4-1.png">
+								<div class="b-6__slide-p anim fadeDown" data-anim="fadeDown" data-delay="200" data-cont=".b-6"><p>Высокое качество оказания услуг и индивидуальный подход к клиентам</p></div>
+							</div>
+						</li>
+						<li>
+							<div class="clearfix">
+								<img class="anim fadeDown" data-anim="fadeDown" data-delay="400" data-cont=".b-6" src="img/slide4-2.png">
+								<div class="b-6__slide-p anim fadeDown" data-anim="fadeDown" data-delay="400" data-cont=".b-6"><p>Своевременное<br>предоставление итоговых документов по окончании оказания услуг</p></div>
+							</div>
+						</li>
+						<li>
+							<div class="clearfix">
+								<img class="anim fadeDown" data-anim="fadeDown" data-delay="600" data-cont=".b-6" src="img/slide4-3.png">
+								<div class="b-6__slide-p anim fadeDown" data-anim="fadeDown" data-delay="600" data-cont=".b-6"><p>Удобное месторасположение</p></div>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="b-services__slider">
-				<div class="slide">
-					<div class="b-services__slide__img"><img src="img/slide5-1.jpg"></div>
-					<div class="b-services__slide__p">
-						<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
-						<p>Медицинский осмотр на управление транспортным средством</p>
-					</div>
-					<p class="b-services__slide__price">от 1000 руб.</p>
-					<img class="b-services__slide__bot-img" src="img/b-services__slide__bot-img.png">
+		</div>
+		<div class="b b-services page-home">
+			<div class="b-block">
+				<div class="clearfix">
+					<h2 class="b-title">Справки и медицинские осмотры</h2>
+					<p class="all-services"><a href="#">Все услуги</a></p>
 				</div>
-				<div class="slide">
-					<div class="b-services__slide__img"><img src="img/slide5-2.jpg"></div>
-					<div class="b-services__slide__p">
-						<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
-						<p>Медицинская справка на государственную службу</p>
-					</div>
-						<p class="b-services__slide__price">от 1700 руб.</p>
-						<img class="b-services__slide__bot-img" src="img/b-services__slide__bot-img.png">
-				</div>
-				<div class="slide">
-					<div class="b-services__slide__img"><img src="img/slide5-3.jpg"></div>
-					<div class="b-services__slide__p">
-						<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
-						<p>Медицинский осмотр на трудоустройство и поступление в учебные заведения</p>
-					</div>
-						<p class="b-services__slide__price">от 1700 руб.</p>
-						<img class="b-services__slide__bot-img" src="img/b-services__slide__bot-img.png">
-				</div>
-				<div class="slide">
-					<div class="b-services__slide__img"><img src="img/slide5-1.jpg"></div>
-					<div class="b-services__slide__p">
-						<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
-						<p>Медицинский осмотр на управление транспортным средством</p>
-					</div>
+				<div class="b-services__slider">
+					<div class="slide">
+						<div class="b-services__slide__img"><img src="img/slide5-1.jpg"></div>
+						<div class="b-services__slide__p">
+							<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
+							<p>Медицинский осмотр на управление транспортным средством</p>
+						</div>
 						<p class="b-services__slide__price">от 1000 руб.</p>
 						<img class="b-services__slide__bot-img" src="img/b-services__slide__bot-img.png">
-				</div>
-				<div class="slide">
-					<div class="b-services__slide__img"><img src="img/slide5-2.jpg"></div>
-					<div class="b-services__slide__p">
-						<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
-						<p>Медицинская справка на государственную службу</p>
 					</div>
-						<p class="b-services__slide__price">от 1700 руб.</p>
-						<img class="b-services__slide__bot-img" src="img/b-services__slide__bot-img.png">
-				</div>
-				<div class="slide">
-					<div class="b-services__slide__img"><img src="img/slide5-3.jpg"></div>
-					<div class="b-services__slide__p">
-						<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
-						<p>Медицинский осмотр на трудоустройство и поступление в учебные заведения</p>
-					</div>
-						<p class="b-services__slide__price">от 1700 руб.</p>
-						<img class="b-services__slide__bot-img" src="img/b-services__slide__bot-img.png">
-				</div>
-			</div>
-			<a href="#" class="button button-blue">Все услуги</a>
-		</div>
-	</div>
-	<div class="b b-otzivi">
-		<div class="b-block">
-			<div class="clearfix">
-				<h2 class="b-title">Отзывы</h2>
-				<p class="all-services"><a href="#">Все отзывы</a></p>
-			</div>
-			<div class="b-otzivi__container clearfix">
-				<div class="b-otzivi__cont anim fadeLeft" data-anim="fadeLeft" data-delay="200" data-cont=".b-otzivi">
-					<div class="b-otzivi__cont__title clearfix">
-						<div class="b-otzivi__cont__title__img"><img src="img/men-1.png"></div>
-						<div class="b-otzivi__cont__title__text">
-							<h3>Владислав Беневоленский</h3>
-							<p>22.09.16</p>
+					<div class="slide">
+						<div class="b-services__slide__img"><img src="img/slide5-2.jpg"></div>
+						<div class="b-services__slide__p">
+							<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
+							<p>Медицинская справка на государственную службу</p>
 						</div>
+							<p class="b-services__slide__price">от 1700 руб.</p>
+							<img class="b-services__slide__bot-img" src="img/b-services__slide__bot-img.png">
 					</div>
-					<div class="b-otzivi__cont__description">
-						<p class="b-otzivi__cont__description-text">Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития. Идейные соображения высшего порядка. Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития. Идейные соображения высшего порядка.</p>
-						
-					</div>
-					<p class="read-more"><a href="#">Читать дальше</a> &#8594;</p>
-				</div>
-				<div class="b-otzivi__cont anim fadeRight" data-anim="fadeRight" data-delay="200" data-cont=".b-otzivi">
-					<div class="b-otzivi__cont__title clearfix">
-						<div class="b-otzivi__cont__title__img"><img src="img/men-2.png"></div>
-						<div class="b-otzivi__cont__title__text">
-							<h3>Аксинья Соколова</h3>
-							<p>22.09.16</p>
+					<div class="slide">
+						<div class="b-services__slide__img"><img src="img/slide5-3.jpg"></div>
+						<div class="b-services__slide__p">
+							<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
+							<p>Медицинский осмотр на трудоустройство и поступление в учебные заведения</p>
 						</div>
+							<p class="b-services__slide__price">от 1700 руб.</p>
+							<img class="b-services__slide__bot-img" src="img/b-services__slide__bot-img.png">
 					</div>
-					<div class="b-otzivi__cont__description">
-						<p class="b-otzivi__cont__description-text">Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития. Идейные соображения высшего порядка.</p>
+					<div class="slide">
+						<div class="b-services__slide__img"><img src="img/slide5-1.jpg"></div>
+						<div class="b-services__slide__p">
+							<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
+							<p>Медицинский осмотр на управление транспортным средством</p>
+						</div>
+							<p class="b-services__slide__price">от 1000 руб.</p>
+							<img class="b-services__slide__bot-img" src="img/b-services__slide__bot-img.png">
 					</div>
-					<p class="read-more"><a href="#">Читать дальше</a> &#8594;</p>
+					<div class="slide">
+						<div class="b-services__slide__img"><img src="img/slide5-2.jpg"></div>
+						<div class="b-services__slide__p">
+							<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
+							<p>Медицинская справка на государственную службу</p>
+						</div>
+							<p class="b-services__slide__price">от 1700 руб.</p>
+							<img class="b-services__slide__bot-img" src="img/b-services__slide__bot-img.png">
+					</div>
+					<div class="slide">
+						<div class="b-services__slide__img"><img src="img/slide5-3.jpg"></div>
+						<div class="b-services__slide__p">
+							<img class="b-services__slide__top-img" src="img/b-services__slide__top-img.png">
+							<p>Медицинский осмотр на трудоустройство и поступление в учебные заведения</p>
+						</div>
+							<p class="b-services__slide__price">от 1700 руб.</p>
+							<img class="b-services__slide__bot-img" src="img/b-services__slide__bot-img.png">
+					</div>
+				</div>
+				<a href="#" class="button button-blue">Все услуги</a>
+			</div>
+		</div>
+		<div class="b b-otzivi">
+			<div class="b-block">
+				<div class="clearfix">
+					<h2 class="b-title">Отзывы</h2>
+					<p class="all-services"><a href="#">Все отзывы</a></p>
+				</div>
+				<div class="b-otzivi__container clearfix">
+					<div class="b-otzivi__cont anim fadeLeft" data-anim="fadeLeft" data-delay="200" data-cont=".b-otzivi">
+						<div class="b-otzivi__cont__title clearfix">
+							<div class="b-otzivi__cont__title__img"><img src="img/men-1.png"></div>
+							<div class="b-otzivi__cont__title__text">
+								<h3>Владислав Беневоленский</h3>
+								<p>22.09.16</p>
+							</div>
+						</div>
+						<div class="b-otzivi__cont__description">
+							<p class="b-otzivi__cont__description-text">Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития. Идейные соображения высшего порядка. Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития. Идейные соображения высшего порядка.</p>
+							
+						</div>
+						<p class="read-more"><a href="#">Читать дальше</a> &#8594;</p>
+					</div>
+					<div class="b-otzivi__cont anim fadeRight" data-anim="fadeRight" data-delay="200" data-cont=".b-otzivi">
+						<div class="b-otzivi__cont__title clearfix">
+							<div class="b-otzivi__cont__title__img"><img src="img/men-2.png"></div>
+							<div class="b-otzivi__cont__title__text">
+								<h3>Аксинья Соколова</h3>
+								<p>22.09.16</p>
+							</div>
+						</div>
+						<div class="b-otzivi__cont__description">
+							<p class="b-otzivi__cont__description-text">Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития. Идейные соображения высшего порядка.</p>
+						</div>
+						<p class="read-more"><a href="#">Читать дальше</a> &#8594;</p>
+					</div>
+				</div>
+				<a href="#" class="button button-blue">Все отзывы</a>
+			</div>
+		</div>
+		<div class="b b-footer">
+			<div class="b-block clearfix">
+				<div class="b-footer__colum">
+					<ul>
+						<li><a href="#"><i class="footer-img insta-img"></i>Instagram</a></li>
+						<li><a href="#"><i class="footer-img vk-img"></i>Вконтакте</a></li>
+					</ul>
+				</div>
+				<div class="b-footer__colum">
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Лицензии</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Вакансии</a></li>
+					</ul>
+				</div>
+				<div class="b-footer__colum">
+					<ul>
+						<li><a href="#">Справки и мед осмотры</a></li>
+						<li><a href="#">Специалисты</a></li>
+						<li><a href="#">Функциональная диагностика</a></li>
+						<li><a href="#">Медицинская лаборатория</a></li>
+					</ul>
+				</div>
+				<div class="b-footer__colum">
+					<ul>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="b-footer__colum">
+					<ul>
+						<li>г.Томск ул. Нахимова, 18</li>
+						<li><a href="tel:+73822559526">+7 (3822) 55-95-26</a></li>
+						<li><a href="tel:+73822229526">+7 (3822) 22-95-26</a></li>
+					</ul>
 				</div>
 			</div>
-			<a href="#" class="button button-blue">Все отзывы</a>
-		</div>
-	</div>
-	<div class="b b-footer">
-		<div class="b-block clearfix">
-			<div class="b-footer__colum">
-				<ul>
-					<li><a href="#"><i class="footer-img insta-img"></i>Instagram</a></li>
-					<li><a href="#"><i class="footer-img vk-img"></i>Вконтакте</a></li>
-				</ul>
+			<div class="b-block b-footer__bot clearfix">
+				<p class="left">Все права защещины &copy; 2016</p>
+				<p class="right"><a href="http://redder.pro" class="b-redder" target="_blank">REDDER</a></p>
 			</div>
-			<div class="b-footer__colum">
-				<ul>
-					<li><a href="#">О компании</a></li>
-					<li><a href="#">Лицензии</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Вакансии</a></li>
-				</ul>
-			</div>
-			<div class="b-footer__colum">
-				<ul>
-					<li><a href="#">Справки и мед осмотры</a></li>
-					<li><a href="#">Специалисты</a></li>
-					<li><a href="#">Функциональная диагностика</a></li>
-					<li><a href="#">Медицинская лаборатория</a></li>
-				</ul>
-			</div>
-			<div class="b-footer__colum">
-				<ul>
-					<li><a href="#">Акции</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</div>
-			<div class="b-footer__colum">
-				<ul>
-					<li>г.Томск ул. Нахимова, 18</li>
-					<li><a href="tel:+73822559526">+7 (3822) 55-95-26</a></li>
-					<li><a href="tel:+73822229526">+7 (3822) 22-95-26</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="b-block b-footer__bot clearfix">
-			<p class="left">Все права защещины &copy; 2016</p>
-			<p class="right"><a href="http://redder.pro" class="b-redder" target="_blank">REDDER</a></p>
 		</div>
 	</div>
 	<div style="display:none;">
