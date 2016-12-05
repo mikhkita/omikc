@@ -153,6 +153,16 @@ $(document).ready(function(){
     $('.page-home .b-services__slider').slick({
         autoplay: true,
         autoplaySpeed: 5000,
+        speed: (isMobile)?300:1000,
+        dots: (isMobile)?true:false,
+        slidesToShow: (isMobile)?1:3, 
+        prevArrow: '<div class="arrow-cont left-arrow"><img class=" arrow" src="img/slider-2_arrow-prev.png"></div>',
+        nextArrow: '<div class="arrow-cont right-arrow"><img class=" arrow" src="img/slider-2_arrow-next.png"></div>'
+    });
+
+    $('.b-stock .b-stock-single__slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
         speed: 1000,
         dots: (isMobile)?true:false,
         slidesToShow: (isMobile)?1:3, 
@@ -181,7 +191,15 @@ $(document).ready(function(){
         speed: 500,
     });
 
-
+    $('.b-stock-single__slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        speed: 1000,
+        dots: (isMobile)?true:false,
+        slidesToShow: (isMobile)?1:3, 
+        prevArrow: '<div class="arrow-cont left-arrow"><img class=" arrow" src="img/slider-2_arrow-prev.png"></div>',
+        nextArrow: '<div class="arrow-cont right-arrow"><img class=" arrow" src="img/slider-2_arrow-next.png"></div>'
+    });
 
 
     // инициализация
@@ -237,7 +255,8 @@ $(document).ready(function(){
     var slideout = new Slideout({
         'panel': document.getElementById('panel'),
         'menu': document.getElementById('menu'),
-        'side': 'right'
+        'side': 'right',
+        'padding': 316,
     });
     document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
           slideout.toggle();

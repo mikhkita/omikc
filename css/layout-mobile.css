@@ -191,7 +191,7 @@ body {
 			color: #fff;
 			margin-left: 0px;
 			margin-bottom: 45px;
-			width: 530px;
+			width: 650px;
 			overflow: hidden;
 		}
 		.b-slider .slide p {
@@ -381,11 +381,11 @@ body {
 	}
 		.b-services .slide {
 			margin: 0px 30px;
-			height: 700px;
+			height: 770px;
 			position: relative;
 		}
 		.b-services .b-services__slide__img {
-			height: 330px;
+			height: 400px;
 			overflow: hidden;
 		}
 			.b-services .b-services__slide__img img {
@@ -421,7 +421,7 @@ body {
 			bottom: 20px;
 			left: 30px;
 			font-family: 'PTSansRegular';
-			font-size: 65px;
+			font-size: 60px;
 			color: #fff;
 			text-align: left;
 		}
@@ -605,9 +605,11 @@ body {
 		.b-footer .b-footer__bot p {
 			color: #adadad;
 			font-family: 'PTSansRegular';
-			font-size: 20px;
+			font-size: 28px;
 		}
-
+.b-redder {
+	margin-top: 7px;
+}
 
 .b-slider-title,
 .b-slider-title .slide ,
@@ -621,7 +623,7 @@ body {
 .b-slider-title .slide h1 {
 	margin-left: 0px;
 	margin-bottom: 35px;
-	font-size: 60px;
+	font-size: 55px;
 }
 .b-slider-title .b-slider__img-for-slide {
 	bottom: 0px;
@@ -639,9 +641,20 @@ body {
 	}
 		.b-breadcrumbs ul li {
 			float: left;
-			margin-right: 20px;
+			margin-right: 65px;
 			color: #1d95d7;
 			font-size: 32px;
+		}
+		.b-breadcrumbs ul li:last-child {
+			margin-right: 0px;
+		}
+		.b-breadcrumbs ul li:after {
+			content: '→';
+			position: absolute;
+			right: -50px;
+		}
+		.b-breadcrumbs ul li:last-child:after {
+			content: none;
 		}
 			.b-breadcrumbs ul li a {
 				color: #1d95d7;
@@ -700,7 +713,7 @@ body {
 	padding-bottom: 65px;
 }
 	.b-news .b-news__container {
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 	.b-news .b-news__cont {
 		margin-top: 80px;
@@ -858,14 +871,14 @@ body {
 		}
 
 .b-services-single {
-	padding-bottom: 130px;
+	padding-bottom: 10px;
 }
 	.b-services-single h1 {
 		font-family: 'PTSerif-Bold';
 		font-size: 60px;
 		color: #000;
 		margin-top: 50px;
-		margin-bottom: 70px;
+		margin-bottom: 60px;
 		text-align: left;
 		line-height: 65px;
 	}
@@ -929,7 +942,7 @@ body {
    	 		line-height: 44px;
 		}
 			.b-services-single .side-right p:first-letter {
-				margin-left: 40px;
+				margin-left: 0px;
 			}
 		.b-news__container-title h2{
 			padding-top: 50px;
@@ -973,7 +986,7 @@ body {
   bottom: 0;
   right: 0;
   z-index: 0;
-  width: 256px;
+  width: 316px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: none;
@@ -982,9 +995,9 @@ body {
 .slideout-panel {
   position: relative;
   z-index: 1;
-  -webkit-box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.46);
--moz-box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.46);
-box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.46);
+  -webkit-box-shadow: 20px 0px 40px 0px rgba(0,0,0,0.35);
+-moz-box-shadow: 20px 0px 40px 0px rgba(0,0,0,0.35);
+box-shadow: 20px 0px 40px 0px rgba(0,0,0,0.35);
 }
 
 .slideout-open,
@@ -1007,23 +1020,23 @@ box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.46);
 	font-size: 50px;
 	margin-top: 40px;
 	color: #fff;
-	margin-left: 30px;
+	margin-left: 60px;
 	margin-bottom: 30px;
 }
 .mobile-menu li {
-	margin-left: 30px;
-	margin-bottom: 20px;
-	padding-top: 15px;
+	margin-left: 60px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 	border-top: 1px solid #fff;
-	margin-right: 30px;
+	margin-right: 60px;
 }
 	.mobile-menu li:first-child {
 		border-top: none;
-		margin-top: 30px;
+		margin-top: 0px;
 	}
 	.mobile-menu li a {
 		font-family: 'PTSansRegular';
-		font-size: 28px;
+		font-size: 32px;
 		color: #fff;
 	}
 
@@ -1148,6 +1161,134 @@ background: linear-gradient(0deg, rgba(0, 0, 0,0.4) 11%, rgba(255, 255, 255, 0) 
 		.b-doctor .b-specialist__container {
 			padding-bottom: 60px;
 		}
+
+.b-stock {
+	margin-top: 60px;
+	padding-bottom: 80px;
+}
+.b-stock .b-stock__cont {
+	margin-top: 70px;
+}
+	.b-stock .b-stock__cont:first-child {
+		margin-top: 0px;
+	}
+	.b-stock .b-stock__cont__img {
+		float: none;
+		width: 100%;
+		height: 350px;
+		margin-right: 0px;
+		overflow: hidden;
+	}
+		.b-stock .b-stock__cont__img img {
+			min-width: 100%;
+		}
+	.b-stock .b-stock__cont__description {
+		width: 100%;
+		float: none;
+	}
+		.b-stock .b-stock__cont__description h2 {
+			font-size: 50px;
+			margin-top: 15px;
+		}
+		.b-stock .b-stock__cont__description p {
+			font-family: 'PTSerifRegular';
+			font-size: 28px;
+			color: #8a8a8a;
+			margin-top: 35px;
+			text-align: left;
+			line-height: 44px;
+		}
+		.b-stock .b-stock__cont__description .button {
+			margin-top: 50px;
+			width: 400px;
+			height: 75px;
+			font-size: 32px;
+			line-height: 75px;
+		}
+
+
+.b-stock-single {
+	margin-top: 40px;
+	padding-bottom: 65px;
+}
+	.b-stock-single h1 {
+		font-family: 'PTSerif-Bold';
+		font-size: 60px;
+		margin-bottom: 45px;
+		line-height: 70px;
+	}
+	.b-stock-single .b-stock-single__img {
+		width: 100%;
+		height: 400px;
+		float: none;
+		margin-right: 0px;
+		overflow: hidden;
+	}
+		.b-stock-single .b-stock-single__img img {
+			min-width: 100%;
+			min-height: 100%;
+		}
+	.b-stock-single .stock-single__description {
+		width: 100%;
+		float: none;
+		margin-top: 30px;
+	}
+		.b-stock-single .stock-single__description h3 {
+			font-size: 40px;
+			font-family: 'PTSerif-Bold';
+			margin-bottom: 20px;
+			margin-top: 0px;
+		}
+		.b-stock-single .stock-single__description p {
+			font-size: 32px;
+			font-family: 'PTSerifRegular';
+			line-height: 44px;
+			margin-top: 5px;
+		}
+.b-stock-single__othe .b-news__container-title {
+	margin-top: 60px;
+}
+.b-stock-single__othe .b-news__container-title h1 {
+	font-family: 'PTSansBold';
+	font-size: 60px;
+	color: #444;
+	margin-bottom: 40px;
+}
+.b-stock-single__othe .b-specialist__cont {
+	height: 430px;
+	width: 690px !important;
+}
+.b-stock-single__othe .b-specialist__cont__title h3 {
+	font-family: 'PTSansBold';
+	font-size: 40px;
+}
+.b-stock-single__othe .b-stock-single__slider {
+	width: 750px;
+	margin-left: -30px;
+	margin-top: 35px;
+}
+.b-stock-single__othe .b-stock-single__slider .b-specialist__cont {
+	width: 690px;
+	float: none;
+}
+.b-stock-single__othe .b-stock-single__slider .b-specialist__cont {
+	margin: 0px 15px;
+}
+.b-stock-single__othe .b-specialist__cont .b-specialist__cont__title {
+	margin: 24px;
+}
+.b-stock-single__othe .left-arrow {
+	position: absolute;
+	left: -30px;
+	top: 34%;
+	cursor: pointer;
+}
+.b-stock-single__othe .right-arrow {
+	position: absolute;
+	right: -30px;
+	top: 34%;
+	cursor: pointer;
+}
 
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
