@@ -1291,6 +1291,133 @@ background: linear-gradient(0deg, rgba(0, 0, 0,0.4) 11%, rgba(255, 255, 255, 0) 
 }
 
 
+
+.b-contacts {
+	padding-bottom: 250px;
+}
+.b-contacts p {
+	font-family: 'PTSansRegular';
+	font-size: 28px;
+	color: #515151;
+	text-align: left;
+	line-height: 44px;
+	width: 100%;
+	margin-top: 50px;
+}
+.b-contacts h1 {
+	margin-top: 60px;
+	margin-bottom: 55px;
+	font-family: 'PTSerif-Bold';
+	font-size: 60px;
+	color: #000;
+	text-align: left;
+}
+.b-contacts .text-area {
+	float: left;
+	margin-right: 0px;
+	
+}
+	.b-contacts .text-area textarea {
+		width: 650px;
+		height: 302px;
+		padding: 10px 16px;
+		border: 1px solid #c0c0c0;
+		border-radius: 5px;
+		font-family: 'PTSansRegular';
+		font-size: 32px;
+		line-height: 44px;
+	}
+.b-contacts .athe-input {
+	float: left;
+	height: 325px;
+	width: 100%;
+}
+	.b-contacts .athe-input input {
+		display: block;
+		width: 650px;
+		height: 70px;
+		padding: 0px 20px;
+		border: 1px solid #c0c0c0;
+		border-radius: 5px;
+		font-family: 'PTSansRegular';
+		font-size: 32px;
+		margin-top: 30px;
+		color: #444;
+	}
+		.b-contacts .athe-input input:first-child {
+			margin-top: 30px;
+		}
+	.b-contacts .athe-input .button {
+		width: 300px;
+		height: 70px;
+		line-height: 70px;
+		margin-top: 40px;
+		font-size: 32px;
+		color: #fff;
+		border: none;
+	}
+	.b-contacts input::-webkit-input-placeholder {
+		color: #a1a1a1;
+	}
+	.b-contacts input:-moz-placeholder {
+		color: #a1a1a1;
+	}
+
+.b-map__inform {
+	width: 495px;
+	height: 520px;
+	position: absolute;
+	background-color: #fff;
+	right: 0px;
+    top: 0px;
+    text-align: left;
+}
+	.b-map__inform img {
+		width: 100%;
+		height: 270px;
+	}
+	.b-map__inform .left {
+		margin-top: 20px;
+	}
+	.b-map__inform .left p {
+		margin-left: 44px;
+		font-family: 'PTSansRegular';
+		font-size: 16px;
+		color: #636363;
+		margin-top: 5px;
+	}
+		.b-map__inform .left p:first-child {
+			margin-bottom: 12px;
+		}
+		.b-map__inform .left p:last-child {
+			margin-top: 10px;
+		}
+	.b-map__inform a {
+		font-family: 'PTSansRegular';
+		font-size: 16px;
+		color: #636363;
+	}
+	.b-map__inform .right {
+		margin-top: 20px;
+	}
+	.b-map__inform .right p {
+		margin-right: 46px;
+		font-family: 'PTSansRegular';
+		font-size: 16px;
+		color: #636363;
+		margin-top: 12px;
+	}
+		.b-map__inform .right p:first-child {
+			margin-top: 5px;
+		}
+	.b-map__inform b {
+		color: #333;
+	}
+.b-map_legend {
+	height: 520px;
+	margin-top: -520px;
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-icon:before{
 		background-image: url('../i/sprite@2x.png');
