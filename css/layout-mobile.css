@@ -133,6 +133,9 @@ body {
 	z-index: 0;
 	height: 700px;
 }
+.block_for-fon {
+	display: none;
+}
 .b-slider .b-slider__img-for-slide {
 	display: none;
 }

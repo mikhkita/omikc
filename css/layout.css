@@ -181,7 +181,7 @@ body {
 	position: relative;
 }
 body {
-	min-width: 1160px;
+	min-width: 1200px;
 	text-align: center;
 	font-family: 'PTSansRegular';
 	overflow-x: hidden;
@@ -668,11 +668,16 @@ box-shadow: 0px 8px 57px -10px rgba(38,36,38,1);
 
 .b-slider {
 	}
+.block_for-fon {
+	position: absolute;
+	width: 50%;
+	left: 0px;
+}
 .b-slider .b-slider__img-for-slide {
 	position: absolute;
-	left: 0px;
+	right: -340px;
 	opacity: 0.9;
-	width: 65%;
+	width: 1294px;
 	z-index: 0;
 	height: 600px;
 }
