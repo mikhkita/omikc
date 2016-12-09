@@ -24,11 +24,8 @@
         <meta name="viewport" content="width=1200, user-scalable=no">
     <? endif; ?>
 
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 768px)" href="{$wa_theme_url}css/layout-mobile.css" />
-
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="js/jssor.js"></script>
 	<script type="text/javascript" src="js/jssor.slider.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
@@ -44,6 +41,7 @@
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/masonry.js"></script>
 	<script type="text/javascript" src="js/slideout.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 <meta name="viewport" content="width=750, user-scalable=no">
 </head>
@@ -100,8 +98,29 @@
 				</div>
 				<div class="b-nav__menu">
 					<ul class="clearfix">
+						<li><a href="#">Услуги</a>
+							<ul class="b-nav__menu__sub">
+								<li><a href="#">Справки и медицинские<br>осмотры</a></li>
+								<li><a href="#">Специалисты</a>
+									<img class="specialist-menu-arrow" src="img/specialist-menu-arrow.png">
+									<ul class="b-nav__menu__sub__specialist clearfix">
+										<li><i class="icon-genicolog"></i><a href="#">Семейный врач (Врач-ОВП)</a></li>
+										<li><i class="icon-lor"></i><a href="#">Семейный врач (Врач-ОВП)</a></li>
+										<li><i class="icon-narkolog"></i><a href="#">Офтальмолог</a></li>
+										<li><i class="icon-nevrolog"></i><a href="#">Офтальмолог</a></li>
+										<li><i class="icon-profpatolog"></i><a href="#">Ревматолог</a></li>
+										<li><i class="icon-psihiatr"></i><a href="#">Ревматолог</a></li>
+										<li><i class="icon-psiholog"></i><a href="#">Дерматолог</a></li>
+										<li><i class="icon-terapevt"></i><a href="#">Дерматолог</a></li>
+										<li><i class="icon-hirurg"></i><a href="#">Гастроинтеролог</a></li>
+										<li><i class="icon-endokrinolog"></i><a href="#">Гастроинтеролог</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Функциональная диагностика</a></li>
+								<li><a href="#">Медицинаская лаборатория</a></li>
+							</ul>
+						</li>
 						<li><a href="#">О компании</a></li>
-						<li><a href="#">Услуги</a></li>
 						<li><a href="#">Акции</a></li>
 						<li><a href="#">FAQ</a></li>
 						<li>
@@ -131,6 +150,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="b-nav__overlay"></div>
 		<div class="b b-slider">
 			<img class="b-slider__img-for-slide" src="img/slide-1_ziga_fon.png">
 			<div class="b-slider__img-for-slide-mobile"></div>

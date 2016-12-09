@@ -54,22 +54,29 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
     
-	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
- //    var myOptions = {
- //        zoom: 16,
- //        center: myPlace,
- //        mapTypeId: google.maps.MapTypeId.ROADMAP,
- //        disableDefaultUI: true,
- //        scrollwheel: false,
- //        zoomControl: true
- //    }
- //    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+     
 
- //    var marker = new google.maps.Marker({
-	//     position: myPlace,
-	//     map: map,
-	//     title: "Ярмарка вакансий и стажировок"
-	// });
+
+       /* var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+            if( $(".gmap-bubble-marker").hasClass("gmap-bubble-marker-hide") ){
+                $(".gmap-bubble-marker").removeClass("gmap-bubble-marker-hide");
+            }else{
+                $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
+            }
+        });
+
+        google.maps.event.addListenerOnce(map, 'idle', function(){
+            infowindow.open(map,marker);
+        });
+        
+        $("body").on("click",".gmap-close-button",function(){
+            $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
+        });*/
 
     //  var options = {
     //     $AutoPlay: true,                                
@@ -116,7 +123,25 @@ $(document).ready(function(){
       event.stopPropagation();
     });
 
-
+    var flag2 = 1;
+    $('.b-nav__menu li:first-child a').click(function() {
+        $('.b-nav__menu__sub').fadeIn();
+        $('.b-nav__overlay').fadeIn();
+        flag2 = 0;
+    });
+    $(document).click( function(event){
+      if (flag2 == 0) {
+        flag2 = 1;
+        return;
+      }
+        else {
+            if( $(event.target).closest(".b-nav__menu__sub").length ) 
+            return;
+        }
+        $('.b-nav__menu__sub').fadeOut();
+        $('.b-nav__overlay').hide();
+      event.stopPropagation();
+    });
 
     var flag = 1;
     //поиск в меню
@@ -149,6 +174,8 @@ $(document).ready(function(){
         $('.b-nav .b-nav__menu .open_my_form').fadeIn();
       event.stopPropagation();
     });
+
+
 
     $('.page-home .b-services__slider').slick({
         autoplay: true,
@@ -266,4 +293,58 @@ $(document).ready(function(){
           if (eve.target.nodeName === 'A') { slideout.close(); }
         });
     
+
+        var myPlace = new google.maps.LatLng(56.455721, 84.964804);
+     var myOptions = {
+         zoom: 17,
+         center: myPlace,
+         mapTypeId: google.maps.MapTypeId.ROADMAP,
+         disableDefaultUI: true,
+         scrollwheel: false,
+         zoomControl: true
+     }
+     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+
+     var marker = new google.maps.Marker({
+         position: myPlace,
+         map: map,
+         title: "Ярмарка вакансий и стажировок"
+     });
+
+     var contentString = '<div class="b-map__inform">'+
+                    '<div class="gmap-bubble-marker">'+
+                    '<div class="gmap-close-button icon-close">xxx</div>'+
+                    '<img src="img/map.jpg">'+
+                    '<div class="clearfix">'+
+                        '<div class="left">'+
+                            '<p>г.Томск ул. Нахимова, 18, 2 этаж</p>'+
+                            '<p><a href="tel:+73822559526">+7 (3822) 55-95-26</a></p>'+
+                            '<p><a href="tel:+73822559526">+7 (3822) 22-95-26</a></p>'+
+                            '<p><a href="mailto:ckmo@mail.ru">ckmo@mail.ru</a></p>'+
+                        '</div>'+
+                        '<div class="right">'+
+                            '<p><b>Время работы:</b></p>'+
+                            '<p>Пн - Пт: <b>8 00 - 18 00</b></p>'+
+                            '<p>Сб: <b>8 00 – 13 00</b></p>'+
+                            '<p>Вс: <b>Выходной</b></p>'+
+                        '</div>'+
+                    '</div>'+
+                    '</div>'+
+                '</div>';
+
+     var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+     if (!isMobile) {
+         infowindow.open(map, marker);
+         marker.addListener('click', function() {
+            //infowindow.open(map, marker);
+            $('.b-map__inform').fadeIn();
+          });
+         $('.close_marker_map').click(function(){
+            //infowindow.close(map, marker);
+            $('.b-map__inform').fadeIn();
+         });
+     }
+
 });
